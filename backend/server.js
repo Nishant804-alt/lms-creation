@@ -7,7 +7,7 @@ await connectDB()
 app.use(cors())
 
 app.get('/', (req, res) => res.send("API working"))
-app.post('/clerk', express.json(), clerkWebhooks)
+// app.post('/clerk', express.json(), clerkWebhooks)
 const PORT = process.env.PORT || 5000 
 
 app.listen(PORT, 'localhost', () => {
