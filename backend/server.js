@@ -13,9 +13,11 @@ app.use(cors())
 app.get('/', (req, res) => res.send("API working"))
 // app.post('/clerk', express.json(), clerkWebhooks)
 
+
 app.listen(port, async() => {
 
     try{
+
 
         await connectDB(db_url)
         
